@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,22 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ng-tslint';
+  public isRendered!: boolean;
+  protected isEdited!: boolean;
+  private isRemoved!: boolean;
+
+  constructor(private readonly http: HttpClient) {
+
+  }
+
+  public toggleRendered(): void {
+  }
+
+  protected toggleEdited(): void {
+  }
+
+  private toggleRemoved(): void {
+  }
+
+
 }

@@ -7,9 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EditItemModalComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  public ngOnInit(): void {
   }
 
 }
